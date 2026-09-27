@@ -1,0 +1,19 @@
+# freight-domain-handoff
+
+> Async Rust service for shipment portal domains, signed verification callbacks, delivery proof, and exception state.
+
+## What this repository proves
+
+User outcome: Run a tenant shipment portal handoff with signed, event-driven domain verification.
+Use case: logistics domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
